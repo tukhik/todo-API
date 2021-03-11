@@ -7,7 +7,7 @@ class TaskController {
     create = async (req, res, next) => {
         try {
             const taskData = {
-                // owner: ObjectId(res.locals.userId),
+                owner: ObjectId(res.locals.userId),
                 ...req.body,
             }
 
